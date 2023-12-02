@@ -27,7 +27,7 @@ public class AppConfig {
    private Environment env;
 
    @Bean
-   public  DataSource getDataSource() {
+   public DataSource getDataSource() {
       DriverManagerDataSource dataSource = new DriverManagerDataSource();
       dataSource.setDriverClassName(env.getProperty("db.driver"));
       dataSource.setUrl(env.getProperty("db.url"));
